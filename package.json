@@ -1,14 +1,15 @@
 {
-    "name": "node-template",
+    "name": "nodejs-calculadora",
     "version": "1.0.0",
     "type": "module",
-    "description": "plantilla base para proyectos node",
+    "description": "primera practica calculadora",
     "scripts": {
         "dev": "nodemon src/index.js",
         "start": "node src/index.js",
         "lint": "eslint src/**/*.js --fix",
         "prettier": "prettier --write .",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "postinstall": "npm run prepare"
     },
     "author": {
         "name": "Manuel Jesús Donoso Pérez"
